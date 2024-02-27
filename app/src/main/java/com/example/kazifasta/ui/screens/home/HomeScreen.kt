@@ -42,7 +42,6 @@ import com.example.kazifasta.ui.common.FreelancerProfileTile
 import com.example.kazifasta.ui.common.FreelancerProfileTile_2
 import com.example.kazifasta.ui.common.SearchBar
 import com.example.kazifasta.ui.screens.category.CategoryDetailsActivity
-import com.example.kazifasta.ui.screens.gallery.GalleryActivity
 import com.example.kazifasta.ui.screens.profile.ProfileActivity
 import com.example.kazifasta.ui.screens.search.SearchActivity
 import com.example.kazifasta.ui.theme.green
@@ -72,34 +71,8 @@ fun HomeScreen(navController: NavController){
                         text = "KaziFasta",
                         fontWeight = FontWeight.Bold,
                         fontSize = 15.sp,
-                        color = mateWhite,
-                        modifier = Modifier.clickable {
-                            val navigateToGallery = Intent(
-                                context,
-                                GalleryActivity::class.java
-                            )
-                            context.startActivity(navigateToGallery)
-                        })
+                        color = mateWhite,)
                 },
-//                actions = {
-////                    val navigateToProfile = Intent(
-////                        context,
-////                        ProfileActivity::class.java
-////                    ).putExtra("Profile", currentUser)
-//
-//                    CircularAvatar(
-//                        size = 40,
-//                        image = currentUser.profileImage,
-//                        description = "Profile Image",
-//                        onClick = {
-//                            navController.navigate("UserProfile")
-////                            context.startActivity(navigateToProfile)
-////                            overridePendingTransition(
-////                                R.anim.slide_in_right,
-////                                R.anim.slide_out_left
-////                            )
-//                        })
-//                }
             )
 
         },

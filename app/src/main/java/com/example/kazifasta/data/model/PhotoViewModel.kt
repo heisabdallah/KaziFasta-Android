@@ -1,8 +1,7 @@
-package com.example.kazifasta.ui.screens.gallery
+package com.example.kazifasta.data.model
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.kazifasta.data.model.Photo
 import com.example.kazifasta.data.network.api.photosApi
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
